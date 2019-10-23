@@ -1,4 +1,4 @@
-main:
+header:
   - titles: Wiki
     url: /wikis/aiida
     key: wikis
