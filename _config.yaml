@@ -180,6 +180,10 @@ analytics:
 markdown    : kramdown
 highlighter : rouge
 
+
+# Reading Files
+include:
+  - _pages
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
@@ -201,6 +205,11 @@ collections:
 
 # Defaults
 defaults:
+  # pages
+  - scope:
+      path: "_pages"
+      type: pages
+
   # posts  
   - scope:
       path: ""
