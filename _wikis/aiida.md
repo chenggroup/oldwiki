@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 aside:
   toc: true
 title: AiiDA 快速上手
