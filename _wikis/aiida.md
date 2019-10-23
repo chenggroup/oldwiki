@@ -2,6 +2,9 @@
 layout: article
 aside:
   toc: true
+title: AiiDA 快速上手
 permalink: /wikis/aiida
 ---
-# AiiDA 快速上手
+
+
+## aiida
