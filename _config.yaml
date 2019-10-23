@@ -20,9 +20,9 @@ text_skin: ocean # "default" (default), "dark", "forest", "ocean", "chocolate", 
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Your Site Title
+title   : Chenglab Wiki
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  XMU Chenglab
 
 
 ## => Language and Timezone
@@ -38,7 +38,7 @@ author:
   name      : XMU chenglab
   url       :
   avatar    : # path or url of avatar image (square)
-  bio       : I am an amazing person.
+  bio       : tutorials for chenglab
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -55,7 +55,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: chenglabwiki/chenglabwiki.github.io
 repository_tree: master
 
 
@@ -71,7 +71,7 @@ paths:
 ## => Post
 ##############################
 ## excerpt
-excerpt_separator: <!--more-->
+excerpt_separator: "/n/n"
 
 ## license
 license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
@@ -179,7 +179,6 @@ analytics:
 ##############################
 markdown    : kramdown
 highlighter : rouge
-permalink   : date
 
 exclude:
   - CHANGELOG.md
@@ -193,13 +192,16 @@ exclude:
   - jekyll-text-theme.gemspec
   - package-lock.json
   - package.json
-  - /docs
-  - /node_modules
-  - /screenshots
-  - /test
-  - /vendor
 
+
+# Collections
+collections:
+  wikis:
+    output: true
+
+# Defaults
 defaults:
+  # posts  
   - scope:
       path: ""
       type: posts
@@ -212,6 +214,24 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+  # wikis
+  - scope:
+      path: ""
+      type: wikis
+    values:
+      layout: article
+      nav_key: wikis
+      # sidebar:
+      #   nav: wikis-categories
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+
+
+# Outputting
+permalink: /:categories/:title/
 
 
 ## => Plugins
