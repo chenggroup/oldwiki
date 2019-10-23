@@ -6,14 +6,14 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  
-      zh      : *ZH_HANS  维基
+      zh-Hans : &ZH_HANS  Wiki
+      zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  維基
+      zh-Hant : &ZH_HANT  Wiki
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       위키
+      ko      : &KO       Wiki
       ko-KR   : *KO
       fr      : &FR       Wiki
       fr-BE   : *FR
