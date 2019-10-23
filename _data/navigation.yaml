@@ -26,7 +26,7 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /archive.md
+    url: /archive.html
 
   - titles:
       # @start locale config
@@ -51,4 +51,4 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /about.md
+    url: /about.html
