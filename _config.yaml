@@ -180,6 +180,9 @@ analytics:
 markdown    : kramdown
 highlighter : rouge
 
+# Markdown Processing
+kramdown:
+  toc_level: 1..6
 
 # Reading Files
 include:
@@ -202,6 +205,7 @@ exclude:
 collections:
   wikis:
     output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -242,6 +246,12 @@ defaults:
 # Outputting
 permalink: /:categories/:title/
 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 ## => Plugins
 ##############################
