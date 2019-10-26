@@ -201,6 +201,7 @@ exclude:
   - package.json
   - vendor
   - .bundle
+  - .sass-cache
 
 # Collections
 collections:
