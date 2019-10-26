@@ -199,7 +199,8 @@ exclude:
   - jekyll-text-theme.gemspec
   - package-lock.json
   - package.json
-
+  - vendor
+  - .bundle
 
 # Collections
 collections:
