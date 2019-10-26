@@ -35,10 +35,10 @@ timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_
 ##############################
 author:
   type      : organization # "person" (default), "organization"
-  name      : XMU chenglab
+  name      : Chenglab XMU
   url       :
   avatar    : # path or url of avatar image (square)
-  bio       : tutorials for chenglab
+  bio       : 
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -158,7 +158,7 @@ pageview:
 ##############################
 search:
   provider: default # "default" (default), false, "google", "custom"
-
+  
   ## Google Custom Search Engine
   google:
     custom_search_engine_id: # Google Custom Search Engine ID
@@ -202,7 +202,8 @@ exclude:
   - vendor
   - .bundle
   - .sass-cache
-
+keep_files:
+  - .git
 # Collections
 collections:
   wikis:
@@ -212,9 +213,6 @@ collections:
 # Defaults
 defaults:
   # pages
-  - scope:
-      path: "_pages"
-      type: pages
 
   # posts  
   - scope:
@@ -234,6 +232,7 @@ defaults:
       type: wikis
     values:
       layout: article
+      name: xjf
       nav_key: wikis
       # sidebar:
       #   nav: wikis-categories
