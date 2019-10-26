@@ -232,7 +232,6 @@ defaults:
       type: wikis
     values:
       layout: article
-      name: xjf
       nav_key: wikis
       # sidebar:
       #   nav: wikis-categories
