@@ -1,7 +1,5 @@
 ---
 title: Getting Started
-tags: 
- - jekyll
 ---
 
 # Getting Started
@@ -198,8 +196,6 @@ and primary.
 <span class="badge badge-primary">primary-badge</span>
 
 ### Alerts
-
-{% include alert.html type="info" title="What is an alert?" content="An alert is a box that can stand out to indicate important information. You can choose from levels success, warning, danger, info, and primary. This example is an info box, and the code for another might look like this:" %}
 
 ```
 {%raw%}{% include alert.html type="info" title="Here is another!" %}{%endraw%}
